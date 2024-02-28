@@ -1,4 +1,4 @@
-var host = "localhost";
+var host = "0.0.0.0";
 var port = 4123;
 
 var cors_proxy = require('cors-anywhere');

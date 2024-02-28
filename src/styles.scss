@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    font-family: "Trebuchet MS", Tahoma, sans-serif;
+    background-color: adjust-hue($color: #23394d, $degrees: 0);
+    color: adjust-hue($color: #e7e5e2, $degrees: 0);
+    width: 97vw;
+}
+
+a{
+    text-decoration: none;
+}
