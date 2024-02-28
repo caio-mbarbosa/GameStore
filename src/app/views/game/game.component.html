@@ -1,0 +1,11 @@
+<router-outlet>
+    <div *ngIf="gameDetails">
+        <h1>{{ gameDetails.title }}</h1>
+        <p>Desenvolvedora: {{ gameDetails.developer }}</p>
+        <p>Categoria: {{ gameDetails.genre }}</p>
+        <p>Plataforma: {{ gameDetails.platform }}</p>
+        <p>Descrição: {{ gameDetails.short_description }}</p>
+        <p>Data de lançamento: {{gameDetails.release_date}}</p>
+        <img class="gameImg" [src]="gameDetails.thumbnail" alt="Thumbnail do Jogo Solo">
+    </div>
+</router-outlet>
