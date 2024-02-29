@@ -15,11 +15,21 @@
             <option *ngFor="let category of categories" [value]="category">{{ category }}</option>
         </select>
 
+        <label for="platform">Plataforma:</label>
+        <select id="platform" [(ngModel)]="selectedPlatform">
+            <option value="">Todas</option>
+            <option *ngFor="let platform of platforms" [value]="platform">{{ platform }}</option>
+        </select>
+
         <label for="startYear">Ano de Lançamento</label>
         <input type="number" id="startYear" [(ngModel)]="selectedYear">
     </div>
 
     <button (click)="applyFilters()">Aplicar Filtros</button>
+    
+    <button (click)="sortByName()">Ordenar por Nome</button>
+    <button (click)="sortByDev()">Ordenar por Desenvolvedora</button>
+    <button (click)="sortByReleaseDate()">Ordenar por Data de Lançamento</button>
     
     <!-- Lista de Jogos Filtrada -->
     <div class="gameList">
