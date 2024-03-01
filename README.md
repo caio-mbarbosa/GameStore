@@ -10,6 +10,7 @@ Olá, você foi selecionado para a fase de desafio técnico. Para prosseguir com
 - Boa sorte =D
 
 # Comentários
+0. Ter npm instalado e angular instalado
 
 1.Para testar a aplicação basta subir o server da mesma maneira de antes (com 'npm install' e node ./server.js no diretório proxy) e rodar um ng serve em outro terminal. A aplicação deve abrir no diretório http://localhost:4200
 
