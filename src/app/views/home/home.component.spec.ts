@@ -1,6 +1,8 @@
-import { TestBed } from '@angular/core/testing';
+import { TestBed, ComponentFixture } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { HomeComponent } from './home.component';
+import { HttpClient } from '@angular/common/http';
+
 
 describe('AppComponent', () => {
   beforeEach(async () => {
@@ -32,4 +34,6 @@ describe('AppComponent', () => {
     const compiled = fixture.nativeElement as HTMLElement;
     expect(compiled.querySelector('h1')?.textContent).toContain('Hello, SelecaoVlab');
   });
+
+
 });

@@ -8,18 +8,22 @@ import { AppComponent } from './app.component';
 import { GamesService } from './services/games/games.service';
 import { GameComponent } from './views/game/game.component';
 import { HomeComponent } from './views/home/home.component';
+import { FilterDropdownComponent } from './components/filter-dropdown.component';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    GameComponent
+    GameComponent,
+    FilterDropdownComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    CarouselModule.forRoot()
   ],
   providers: [GamesService],
   bootstrap: [AppComponent]
