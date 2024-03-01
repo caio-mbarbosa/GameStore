@@ -13,7 +13,7 @@ Feature: Detalhes do Jogo
     Scenario: Acessando a página do jogo 'Genshin Impact' com sucesso
     Given : Entro na página incial da aplicação
     And : Sou redirecionado para a home
-    When : Eu interajo com o item do jogo 'Overwatch'
+    When : Eu interajo com o item do jogo 'Genshin Impact'
     Then : Eu sou redirecionado para a página com mais detalhes do jogo
 
 

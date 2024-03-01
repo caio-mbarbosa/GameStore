@@ -1,11 +1,40 @@
-<router-outlet>
-    <div *ngIf="gameDetails">
-        <h1>{{ gameDetails.title }}</h1>
+<div *ngIf="gameDetails" class = "container">
+    <div class="header">
+        <a class="home-btn" (click)="goToHome()">
+            <svg height="50px" width="50px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  	 viewBox="0 0 155.139 155.139" xml:space="preserve"> <g> 	<g> 		<path style="fill:#010002;" d="M125.967,51.533V20.314h-16.862V38.06L77.569,12.814L0,74.869h21.361v67.455h112.416v-67.45h21.361 			L125.967,51.533z M125.925,134.472H97.546V82.37H57.58v52.103H29.202V71.146l48.356-38.689l48.355,38.689v63.326H125.925z"/> 	</g> </g> </svg>
+        </a>
+        <h1> {{ gameDetails.title }} </h1>
+        <div style="width: 50px"></div>
+    </div>
+
+    <br>
+    <br>
+
+    <div>
+        <p>{{ gameDetails.description }}</p>
+        <p>Data de lançamento: {{gameDetails.release_date}}</p>
+    </div>
+    <div class="smallInfo">
         <p>Desenvolvedora: {{ gameDetails.developer }}</p>
         <p>Categoria: {{ gameDetails.genre }}</p>
         <p>Plataforma: {{ gameDetails.platform }}</p>
-        <p>Descrição: {{ gameDetails.short_description }}</p>
-        <p>Data de lançamento: {{gameDetails.release_date}}</p>
-        <img class="gameImg" [src]="gameDetails.thumbnail" alt="Thumbnail do Jogo Solo">
     </div>
-</router-outlet>
+    <br><br>
+    <div *ngIf="gameDetails.minimum_system_requirements">
+        <div class="requirements-heading"><h2>Requisitos Mínimos</h2></div>
+        <p>
+            Placa Gráfica: {{ gameDetails.minimum_system_requirements.graphics }} <br>
+            Memória: {{ gameDetails.minimum_system_requirements.memory }} <br>
+            Sistema Operacional: {{ gameDetails.minimum_system_requirements.os }} <br>
+            Processador: {{ gameDetails.minimum_system_requirements.processor }} <br>
+            Espaço em disco rígido: {{ gameDetails.minimum_system_requirements.storage }} <br>
+        </p>
+    </div>
+    <p class="linkPage"><a href="{{gameDetails.game_url}}">Página da jogo</a></p>
+    
+    <carousel>
+        <slide *ngFor="let screenshot of gameDetails.screenshots">
+          <img [src]="screenshot.image" alt="Screenshot">
+        </slide>
+    </carousel>
+</div>
