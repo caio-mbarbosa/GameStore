@@ -17,6 +17,6 @@ Requisitos para rodar o projeto!
 
 1. Para testar a aplicação basta subir o server da mesma maneira de antes (com 'npm install' e node ./server.js no diretório proxy) e rodar um ng serve em outro terminal. A aplicação deve abrir no diretório http://localhost:4200
 
-2. Para rodar os teste vai precisar da instalar do Selenium (pip install selenium já resolve) e do navegador Chrome 
+2. Para rodar os testes vai precisar instalar o Selenium (pip install selenium já resolve) e o navegador Chrome 
 
-3. Para rodar os testes automatizados certifique-se de ter Python instaldo (pode ser que o você invoque python como 'py' ou 'python3' se ocorrer um erro pode tentar trocar no arquivo package.json na linha ""test-selenium": "py test-acceptance/home_tests.py""). Depois disso, basta rodar o comando 'npm run test-selenium', vale notar que os testes estão demorando por volta de 90 segundo para terminarem e eles são executados em ordem aleatória.
+3. Para rodar os testes automatizados certifique-se de ter Python instaldo ( pode ser que o você invoque python como 'py' ou 'python3' se ocorrer um erro pode tentar trocar no arquivo package.json na linha ""test-selenium": "py test-acceptance/home_tests.py""). Depois disso, basta rodar o comando 'npm run test-selenium', vale notar que os testes estão demorando por volta de 90 segundo para terminarem e eles são executados em ordem aleatória.
