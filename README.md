@@ -17,3 +17,11 @@ Requisites to run the project!
 2. In order to run the tests you will need Selenium (pip install selenium should work) and the Chrome web browser 
 
 3. To run the automated tests be sure to have Python installed ( you may call pyhton on the terminal as 'py' or 'python3' if any error occurs while running the tests you should try changing the the way python is called on 'package.json' in the line ""test-selenium": "py test-acceptance/home_tests.py""). After that, you can run the command 'npm run test-selenium'. The test are taking about 90 seconds to run and are performed in a random fashion.
+
+# App Screenshots
+
+![alt text](\src\assets\image-2.png)
+
+![alt text](\src\assets\image-1.png)
+
+![alt text](\src\assets\image.png)
