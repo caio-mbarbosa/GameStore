@@ -20,8 +20,8 @@ Requisites to run the project!
 
 # App Screenshots
 
-![alt text](\src\assets\image-2.png)
+![Alt text](src/assets/image-2.png)
 
-![alt text](\src\assets\image-1.png)
+![Alt text](src/assets/image-1.png)
 
-![alt text](\src\assets\image.png)
+![Alt text](src/assets/image.png)
