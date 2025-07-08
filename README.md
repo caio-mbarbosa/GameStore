@@ -1,22 +1,19 @@
-# SelecaoVlab
+# GameStore
 
-Olá, você foi selecionado para a fase de desafio técnico. Para prosseguir com o seu desafio, precisamos informar algumas questões.
+This project aims to recreate a 'game store' type site using Angular. I drew a lot of inspiration from the Steam site. In the site created you are able to select your favorite games, you can view details of each game and you can customize your search to find the games you want to find. 
 
-- **Não faça um fork deste projeto, você deve fazer um clone local e criar um repositorio privado a partir dele**
-- Para que as suas requisições funcionem, você precisa entrar na pasta proxy, fazer um `npm install` nela e em seguida `node ./server.js`.
-- A documentação da API que você irá consumir pode ser encontrada em https://www.freetogame.com/api-doc.
-- Note que para a requisição funcionar você deverá fazer sempre rodar o serviço node na pasta proxy e fazer suas requisições adicionando http://localhost:4123/ antes de cada url. Exemplo: caso deseje buscar todos os jogos, você deverá fazer um GET para a seguinte url: `http://localhost:4123/https://www.freetogame.com/api/games`. **Faça a requisição para o localhost usando http e não https**.
-- Se o projeto não estiver rodando corretamente não se desespere, é intencional, existem alguns bugs que você deve corrigir para que o projeto funcione.
-- Boa sorte =D
+The features from the project are detailed in the 'features' folder using Gherkin. Futhermore tests were created to properly ensure the features are working as intended. 
 
-# Comentários
+This project uses an API to get the data from the games listed on the page. The API documentations can be found in https://www.freetogame.com/api-doc.
 
-Requisitos para rodar o projeto!
+# How to Run
 
-0. Ter Node.js e Angular instalado
+Requisites to run the project!
 
-1. Para testar a aplicação basta subir o server da mesma maneira de antes (com 'npm install' e node ./server.js no diretório proxy) e rodar um ng serve em outro terminal. A aplicação deve abrir no diretório http://localhost:4200
+0. Having both Node.js and Angular installed
 
-2. Para rodar os testes vai precisar instalar o Selenium (pip install selenium já resolve) e o navegador Chrome 
+1. In order to run the applications you should first run 'npm install' on the 'proxy' folder. After that, you should run 'node ./server.js' on the 'proxy' directory again. After that,  run 'ng serve' on another terminal. The app should then be available on http://localhost:4200
 
-3. Para rodar os testes automatizados certifique-se de ter Python instaldo ( pode ser que o você invoque python como 'py' ou 'python3' se ocorrer um erro pode tentar trocar no arquivo package.json na linha ""test-selenium": "py test-acceptance/home_tests.py""). Depois disso, basta rodar o comando 'npm run test-selenium', vale notar que os testes estão demorando por volta de 90 segundo para terminarem e eles são executados em ordem aleatória.
+2. In order to run the tests you will need Selenium (pip install selenium should work) and the Chrome web browser 
+
+3. To run the automated tests be sure to have Python installed ( you may call pyhton on the terminal as 'py' or 'python3' if any error occurs while running the tests you should try changing the the way python is called on 'package.json' in the line ""test-selenium": "py test-acceptance/home_tests.py""). After that, you can run the command 'npm run test-selenium'. The test are taking about 90 seconds to run and are performed in a random fashion.
